@@ -29,8 +29,8 @@ public class task_3 {
             }
         } else {
             System.out.println("Введен некорректный знак, введите снова");
-            sc.close();
         }
+        sc.close();
     }
 }
 
@@ -70,7 +70,7 @@ public class task_3 {
 //             }
 //             default:
 //                 System.out.println("Введен некорректный знак, введите снова");
-//                 sc.close();
 //         }
+//         sc.close();
 //     }
 // }
