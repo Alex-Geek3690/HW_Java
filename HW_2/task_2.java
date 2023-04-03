@@ -20,7 +20,7 @@ public class task_2 {
         String line = br.readLine();
         fr.close();
         br.close();
-       
+
         StringBuilder new_line = new StringBuilder();
         for (int i = 0; i < line.length(); i++) {
             if (line.charAt(i) != '"' && line.charAt(i) == ':') {
@@ -31,6 +31,5 @@ public class task_2 {
         }
         String[] array = new_line.toString().split(",");
         System.out.println("студент" + array[1] + "получил" + array[3] + "по предмету" + array[5] + ".");
-
     }
 }
