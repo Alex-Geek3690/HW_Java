@@ -3,7 +3,7 @@ package H_W.HW_4;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class task_3 {
+public class task_3_1 {
 
     public static void main(String[] args) {
         Stack<Integer> st = new Stack<>();
