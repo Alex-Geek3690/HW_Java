@@ -37,7 +37,7 @@ public class task_2 {
         Map<String, Integer> employees = new HashMap<>();
         ArrayList<String> list = new ArrayList<>(Arrays.asList("Светлана Петрова", "Кристина Белова", "Анна Мусина", 
         "Анна Крутова", "Иван Юрин", "Петр Лыков", "Павел Чернов", "Петр Чернышов", "Мария Федорова", "Марина Светлова",
-        "Мария Савина", "Мария Рыкова", "Марина Лугова", "Анна Владимирова", "Иван Мечников","Петр Петин", "Иван Ежов"));
+        "Мария Савина", "Мария Рыкова", "Марина Лугова", "Анна Владимирова", "Иван Мечников", "Петр Петин", "Иван Ежов"));
         for (String names : list) {
             if (employees.containsKey(Array.get(names.split(" "), 0))) {
                 int count = employees.get(Array.get(names.split(" "), 0));
@@ -56,6 +56,8 @@ public class task_2 {
                                                                 Map.Entry::getValue, 
                                                                 (e1, e2) -> e1, 
                                                                 LinkedHashMap::new));
-        System.out.println(sort_employees);
+        for (var item : sort_employees.entrySet()) {
+            System.out.printf("%s:%d ", item.getKey(), item.getValue());
+        }
     }
 }
