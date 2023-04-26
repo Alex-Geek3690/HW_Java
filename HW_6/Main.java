@@ -151,8 +151,9 @@ public class Main {
     public static void sort_notebok(HashSet<Notebook> set, HashMap<String, Object> select_par) {
         HashSet<Notebook> list_nb = new HashSet<>();
         for (Notebook item : set) {
-            if (item.getRam() >= (Integer) select_par.get("ram") && item.getHdd() >= (Integer) select_par.get("hdd") &&
-                (item.getOs().equals((String) select_par.get("os")) || select_par.get("os").equals("")) &&
+            if ((item.getOs().equals((String) select_par.get("os")) || select_par.get("os").equals("")) &&
+                    item.getRam() >= (Integer) select_par.get("ram") && item.getHdd() >= (Integer) select_par.get("hdd")
+                    &&
                     (item.getColor().equals((String) select_par.get("color")) || select_par.get("color").equals(""))) {
                 list_nb.add(item);
             }
